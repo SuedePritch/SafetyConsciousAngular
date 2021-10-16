@@ -6,13 +6,15 @@
   .sidenav-content {
     display: flex;
     height: 100%;
+    width:100%;
   }
   
   .sidenav {
     padding: 0px;
+    background-color: black;
   }
 
   mat-icon{
       font-size:60px;
-      
+      margin-right: 30px;
   }

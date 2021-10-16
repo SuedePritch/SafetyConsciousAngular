@@ -9,10 +9,13 @@ import { WhmisComponent } from './page/whmis/whmis.component';
 import { SitedetailsComponent } from './page/sitedetails/sitedetails.component';
 import { FlhaComponent } from './page/flha/flha.component';
 import { CovidComponent } from './page/covid/covid.component';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
+
   
+  {path: '', component: CovidComponent},
   {path: 'home', component: HomeComponent},
   {path: 'emergency', component: EmergencyComponent},
   {path: 'documents', component: DocumentsComponent},
@@ -21,7 +24,8 @@ const routes: Routes = [
   {path: 'whmis', component: WhmisComponent},
   {path: 'siteDetails', component: SitedetailsComponent},
   {path: 'flha', component: FlhaComponent},
-  {path: 'covid', component: CovidComponent}
+  {path: 'covid', component: CovidComponent},
+  {path: "**", component: PageNotFoundComponent}
 ];
 
 @NgModule({

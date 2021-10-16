@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NavButtonComponent } from './component/nav-button/nav-button.component';
+import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
+import { TopbarComponent } from './component/topbar/topbar.component';
 
 
 
@@ -14,7 +16,9 @@ import { NavButtonComponent } from './component/nav-button/nav-button.component'
   declarations: [
     AppComponent,
     NavButtonComponent,
-    routingComponents
+    routingComponents,
+    PageNotFoundComponent,
+    TopbarComponent
     
   ],
   imports: [
