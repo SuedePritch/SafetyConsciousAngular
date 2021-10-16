@@ -1,2 +1,13 @@
-<app-nav-button>
-</app-nav-button>
+<mat-drawer-container class="container">
+    <mat-drawer #drawer class="sidenav" mode="side" opened>
+      <app-nav-button></app-nav-button>
+    </mat-drawer>
+  
+    <div class="sidenav-content">
+      <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+      
+      <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
+  
