@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CovidComponent implements OnInit {
 
   constructor() { }
+  
 
   ngOnInit(): void {
   }

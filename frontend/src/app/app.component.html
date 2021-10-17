@@ -1,12 +1,26 @@
-<mat-drawer-container class="container">
-    <mat-drawer #drawer class="sidenav" mode="side" opened>
-      <app-nav-button></app-nav-button>
-    </mat-drawer>
-  
-    <div class="sidenav-content">
-        <app-topbar></app-topbar>
+<body>
+
+  <main class="flex-main">
+
+
+      <nav class="flex-nav">
+          <a class="button" 
+            *ngFor="let button of buttons"  
+            routerLink="./{{button.title}}">
+            {{button.title}}</a>
+      </nav>
+
+
+      <article class="flex-article"  >
+          <a class="icon" 
+            *ngFor="let button of buttons"
+            routerLink="./{button.title}">
+            <mat-icon>{{button.icon}}</mat-icon></a>
+      </article>
       
-    </div>
-  
-  </mat-drawer-container>
-  
+      <aside class="flex-aside">
+          <router-outlet></router-outlet>
+      </aside> 
+      
+  </main>
+</body>
