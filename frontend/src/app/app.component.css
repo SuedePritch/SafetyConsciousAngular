@@ -62,7 +62,7 @@ a{
 }
 
 @media all and (max-width: 415px) {
-  .flex-nav, .button{
+  .flex-nav{
       display: none;
   }
 }
