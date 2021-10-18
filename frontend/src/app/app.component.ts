@@ -12,8 +12,6 @@ export class AppComponent {
   title = 'frontend';
   
   buttons: any[]= [
-    
-    {title: '',icon: 'menu'},
     {title: 'Emergency',icon: 'emergency'},
     {title: 'Documents',icon: 'folder'},
     {title: 'Certificates',icon: 'card_membership'},

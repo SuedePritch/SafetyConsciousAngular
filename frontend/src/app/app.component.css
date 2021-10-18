@@ -37,6 +37,17 @@ a{
   align-items: center;
   justify-content: left;
 }
+.buttonheader{
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  height: 100%;
+  padding-left: 0.5rem;
+  align-items: center;
+  justify-content: left;
+
+}
 
 .flex-article {
   background-color: #baec55; 
@@ -55,11 +66,25 @@ a{
   align-items: center;
   justify-content: center;
 }
+
+.iconheader{
+  display: flex;
+  width: 50px;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border:0;
+  padding: 0;
+}
+
 .flex-aside {
   background-color: #B95F21; 
   flex: 1 1 5rem;
   padding-top: 3rem;          
 }
+
 
 @media all and (max-width: 415px) {
   .flex-nav{

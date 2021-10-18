@@ -4,14 +4,19 @@
 
 
       <nav class="flex-nav">
+          <a class="buttonheader"></a>
+          
           <a class="button" 
-            *ngFor="let button of buttons"  
-            routerLink="./{{button.title}}">
-            {{button.title}}</a>
-      </nav>
-
-
-      <article class="flex-article"  >
+          *ngFor="let button of buttons"  
+          routerLink="./{{button.title}}">
+          {{button.title}}</a>
+        </nav>
+        
+        
+        <article class="flex-article" >
+          <button class="iconheader">
+            <mat-icon>menu</mat-icon>
+          </button>
           <a class="icon" 
             *ngFor="let button of buttons"
             routerLink="./{{button.title}}">
