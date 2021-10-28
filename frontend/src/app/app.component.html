@@ -1,31 +1,21 @@
+<header>
+</header>
+
 <body>
-
-  <main class="flex-main">
-
-
-      <nav class="flex-nav">
-          <a class="buttonheader"></a>
-          
+  <div class="container">
+    <div class="navigation">
+        <div class="navigation-button">
+          <a class="button" id="menu-button" (click)="onClick()">
+            <mat-icon>menu</mat-icon></a>
           <a class="button" 
-          *ngFor="let button of buttons"  
-          routerLink="./{{button.title}}">
-          {{button.title}}</a>
-        </nav>
-        
-        
-        <article class="flex-article" >
-          <button class="iconheader">
-            <mat-icon>menu</mat-icon>
-          </button>
-          <a class="icon" 
-            *ngFor="let button of buttons"
+            *ngFor="let button of buttons"  
             routerLink="./{{button.title}}">
-            <mat-icon>{{button.icon}}</mat-icon></a>
-      </article>
-      
-      <aside class="flex-aside">
-          <router-outlet></router-outlet>
-      </aside> 
-      
-  </main>
+            {{button.title}}<mat-icon>{{button.icon}}</mat-icon></a>
+        </div>
+    </div>
+    <div class="main-page">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </body>
+

@@ -1,7 +1,8 @@
+import { NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
 import { Route } from '@angular/router';
 import { routingComponents } from './app-routing.module';
-
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { routingComponents } from './app-routing.module';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'Safety Conscious';
+  public smallMenu:boolean = false;
+  public menuSize:any = "Show";
+
   
   buttons: any[]= [
     {title: 'Emergency',icon: 'emergency'},
@@ -23,4 +27,15 @@ export class AppComponent {
     {title: 'Add Report',icon: 'add'}
 
   ]
+
+  
+  onClick(){
+    this.smallMenu =!this.smallMenu;
+    if (this.smallMenu)
+      this.menuSize = "Small";
+    else this.menuSize = "Large"
+    console.log(this.menuSize)
+    
+
+  }
 }
