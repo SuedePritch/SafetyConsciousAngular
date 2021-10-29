@@ -1,3 +1,7 @@
+* {
+  background: hsl(0, 0%, 20%);
+}
+
 body {
   display: flex;
   width: 100%;
@@ -20,16 +24,18 @@ body {
   justify-content: left;
   min-width: 200px;
   max-width: 300px;
-  height: 100vh;
+  height: 100%;
   background: hsl(0, 0%, 20%);
 }
 .main-page {
   display: flex;
+  margin: 0;
+  padding: 0;
   width: 100%;
   height: 100%;
-  padding: 1rem;
-  background: rgb(32, 32, 38);
+  background: hsl(240, 9%, 14%);
   color: white;
+  overflow: scroll;
 }
 
 .button {
@@ -40,16 +46,18 @@ body {
   box-sizing: border-box;
   border: none;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: 0.08em;
   height: 10vh;
+  max-height: 80px;
   padding-left: 1rem;
   padding-right: 0.8rem;
-  color: hsl(85, 80%, 40%);
+  color: hsl(85, 90%, 50%);
 }
 
 .button:hover {
-  background: hsl(200, 82%, 67%);
-  color: hsl(275, 80%, 40%);
+  background: hsl(85, 90%, 50%);
+  color: hsl(0, 0%, 10%);
 }
 
 #menu-button {
@@ -69,7 +77,12 @@ body {
   .navigation:hover {
     position: relative;
     transform: translateX(150px);
-    transition-duration: 250ms;
+    transition-duration: 400ms;
     z-index: 2;
   }
+}
+
+mat-icon {
+  background: inherit;
+  color: inherit;
 }

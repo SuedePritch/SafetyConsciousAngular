@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  max-width: 50ch;
+  min-width: 20ch;
+  height: inherit;
+  padding: 1.2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: hsl(85, 90%, 50%);
+}
+
+h3 {
+  padding-top: 2rem;
+  font-weight: 600;
+  word-wrap: normal;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+}
+
+h4 {
+  margin-top: 0.8rem;
+  word-wrap: normal;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+}
+
+ul {
+  margin-top: 0.2rem;
+  margin-left: 0.25rem;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.submit {
+  display: flex;
+  justify-content: right;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+button {
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}
+
+.mat-button-toggle-group {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 2rem;
+}
+
+.mat-button-toggle {
+  width: 4rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  border-radius: 15px;
+}
+.mat-button-toggle-checked {
+  background: hsl(85, 90%, 50%);
+  color: hsl(0, 0%, 10%);
+}

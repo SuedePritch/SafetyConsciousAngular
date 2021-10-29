@@ -1,1 +1,50 @@
-<p>covid works</p>
+<body>
+    <h2>COVID</h2>
+    <section>
+        <h3>
+            Do you currently have any of the following COVID-19 symptoms.
+        </h3>
+        <h4>Symptoms should not be chronic or related to other known causes or conditions.</h4>
+            <ul>
+                <li>fever and/or chills</li>
+                <li>cough or barking cough (croup)</li>
+                <li>shortness of breath</li>
+                <li>decrease or loss of smell or taste</li>
+                <li>
+                    fatigue and/or muscle aches/joint
+                    pain (for adults)
+                </li>
+                <li>
+                    nausea/vomiting, and/or diarrhea (for under
+                    18)
+                </li>
+            </ul>
+        <h4>
+            If you received a COVID-19
+            vaccination in the last 48 hours and
+            are experiencing mild fatigue,
+            muscle aches and/or joint pain
+            that only began after vaccination,
+            select “No.”
+        </h4>
+        <mat-button-toggle-group name="symptoms" aria-label="symptoms">
+            <mat-button-toggle  class="togglebtn" value="Yes">Yes</mat-button-toggle>
+            <mat-button-toggle  class="togglebtn" value="No">No</mat-button-toggle>
+        </mat-button-toggle-group>
+    </section>
+    <section>
+        <h3>
+            Have you or anyone you live with been told to isolate?
+        </h3>
+        <h4>This can be because of an outbreak or contact tracing</h4>
+        <mat-button-toggle-group name="isolate" aria-label="isolate">
+            <mat-button-toggle  class="togglebtn" value="Yes">Yes</mat-button-toggle>
+            <mat-button-toggle  class="togglebtn" value="No">No</mat-button-toggle>
+        </mat-button-toggle-group>
+        
+    </section>
+    <section class="submit">
+        <button>Submit</button>
+    </section>
+</body>
+
