@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  flex-direction: column;
+  max-width: 20ch;
+}
+button {
+  margin: 1rem;
+  padding: 1rem;
+  width: 100px;
+}
+a {
+  margin: 0 2rem;
+}

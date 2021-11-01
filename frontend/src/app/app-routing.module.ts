@@ -13,6 +13,9 @@ import { CovidComponent } from './page/covid/covid.component';
 import { AddreportComponent } from './page/addreport/addreport.component';
 import { PageNotFoundComponent } from './page/page-not-found/page-not-found.component';
 
+import { LoginComponent } from './page/login/login.component';
+import { RegisterComponent } from './page/register/register.component';
+
 
 const routes: Routes = [
   {path: '', component: CovidComponent},
@@ -26,6 +29,13 @@ const routes: Routes = [
   {path: 'FLHA', component: FlhaComponent},
   {path: 'Covid', component: CovidComponent},
   {path: 'Add Report', component: AddreportComponent},
+  
+  {path: 'Login', component: LoginComponent},
+  {path: 'Register', component: RegisterComponent},
+  
+  
+  
+  
   {path: "**", component: PageNotFoundComponent}
 ];
 
@@ -44,5 +54,7 @@ export const routingComponents =[
   FlhaComponent,
   CovidComponent,
   AddreportComponent,
+  LoginComponent,
+  RegisterComponent,
   PageNotFoundComponent
 ]
