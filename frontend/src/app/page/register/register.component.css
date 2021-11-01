@@ -43,7 +43,8 @@ form {
 .input {
   padding: 1rem 0;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  width: auto;
 }
 
 .submit {

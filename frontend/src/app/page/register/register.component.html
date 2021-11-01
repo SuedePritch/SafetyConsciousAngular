@@ -2,23 +2,10 @@
     <h1>Register</h1>
     <h3>
     <form action="/Register" method="POST">
-    <div>
-        <div class="label"><label for="firstName">First Name</label></div>
-        <div class="input"><input type="text" name="firstName" id="firstName"></div>
-    </div>
-    <div>
-        <div class="label"><label for="lastName">Last Name</label></div>
-        <div class="input"><input type="text" name="lastName" id="lastName"></div>
-    </div>
-    <div>
-        <div class="label"><label for="email">Email</label></div>
-        <div class="input"><input type="text" name="email" id="email"></div>
-    <div>
-    <div>
-        <div class="label"><label for="phoneNumber">Phone Number</label></div>
-        <div class="input"><input type="tel" name="phoneNumber" id="phoneNumber"></div>
-    <div>
-    <div>
+        <div class="input"><input type="text" name="firstName" id="firstName" placeholder="First Name"></div>
+        <div class="input"><input type="text" name="lastName" id="lastName" placeholder="Last Name"></div>
+        <div class="input"><input type="text" name="email" id="email" placeholder="Email"></div>
+        <div class="input"><input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"></div>
         <div class="label"><label for="jobTitle">Job Title</label></div>
         <div class="input">
             <select id="jobTitle" name="jobTitle">
@@ -28,8 +15,6 @@
                 <option value="Manager">Manager</option>
             </select>
         </div>
-    <div>
-    <div>
         <div class="label"><label for="location">Primary Worksite</label></div>
         <div class="input">
             <select id="location" name="location">
@@ -42,8 +27,6 @@
             </select>
         </div>
     <div>
-        <div class="label"><label for="password">Password</label></div>
-        <div class="input"><input type="text" name="password" id="password"></div>
+        <div class="input"><input type="text" name="password" id="password" placeholder="Password"></div>
     </div>
     <button type="submit">Register</button>
-    <a routerLink="/Login">Login</a>

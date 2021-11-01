@@ -11,11 +11,11 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Safety Conscious';
-  public smallMenu:boolean = false;
-  public menuSize:any = "Show";
 
   
   buttons: any[]= [
+
+    {title: 'Login',icon: 'account_circle'},
     {title: 'Emergency',icon: 'emergency'},
     {title: 'Documents',icon: 'folder'},
     {title: 'Certificates',icon: 'card_membership'},
@@ -27,15 +27,4 @@ export class AppComponent {
     {title: 'Add Report',icon: 'add'}
 
   ]
-
-  
-  onClick(){
-    this.smallMenu =!this.smallMenu;
-    if (this.smallMenu)
-      this.menuSize = "Small";
-    else this.menuSize = "Large"
-    console.log(this.menuSize)
-    
-
-  }
 }

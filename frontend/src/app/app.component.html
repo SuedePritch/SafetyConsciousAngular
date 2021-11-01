@@ -5,9 +5,7 @@
   <div class="container">
     <div class="navigation">
         <div class="navigation-button">
-          <a class="button" id="menu-button" routerLink="/Login">
-            <mat-icon>account_circle</mat-icon></a>
-          <a class="button" 
+        <a class="button" 
             *ngFor="let button of buttons"  
             routerLink="./{{button.title}}">
             {{button.title}}<mat-icon>{{button.icon}}</mat-icon></a>
